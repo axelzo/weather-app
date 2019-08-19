@@ -1,0 +1,31 @@
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 15rem;
+    height: 15  rem;
+    border: .25rem solid red; 
+
+}
+.card:hover {
+    transform: scale(-3px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.2);
+}
+.card--selected{
+    display: block;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-style: solid;
+    border-color: red
+}
+
+.card__date{
+    float: right;
+}
+.card__image{
+justify-content: center
+}

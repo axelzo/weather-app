@@ -1,0 +1,73 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items:center; 
+}
+
+.navbar__menu {
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  padding: 1.7rem;
+  font-size: 1.7rem;
+ 
+}
+
+.navbar__menu:hover {
+  cursor: pointer;
+}
+
+
+.navbar__item{
+  padding: 1.4rem;
+  text-align: center;
+}
+
+.navbar__items{
+  display: flex;
+}
+
+.navbar__items--center{
+  align-content: center;
+}
+
+
+.navbar__items--right {
+  align-content: center;
+}
+
+
+img.profile  {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar__items,
+    .navbar {
+      flex-direction: row;
+    }
+  
+  .navbar__items {
+      display: flex;
+  }
+  
+  .navbar__items--center {
+    display: none;
+  }
+  h1{display: none}
+
+   img.icon  {
+    display: none;
+  }
+  img.menu  {
+    height: 3.6rem;
+    width: 3.6rem;
+  }
+  
+}
+
+
