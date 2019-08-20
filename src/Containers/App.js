@@ -29,20 +29,14 @@ class App extends Component {
       );
   }
 
-  onSearchChange = (event) => {
-    this.setState({ searchfield: event.target.value })
-  }
-
-
   render() {
 
     return (
-
       <div className="app">
         <Navbar className="app__item" />
-        <div className="app__item app__container">
-          <CardDetail current={this.state.data.current}/>
-          <CardGrid className="" forecast={this.state.data.forecast} />
+        <div className="app__container">
+          <CardDetail location={this.state.data.location} current={this.state.data.current} forecast={this.state.data.forecast}/>
+          <CardGrid className="app__container--column" forecast={this.state.data.forecast} />
         </div>
         <Footer/>
       </div>

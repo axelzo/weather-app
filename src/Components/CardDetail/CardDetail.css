@@ -1,4 +1,63 @@
 .card-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background-color: rgb(241, 241, 241);
-    width: 30%;
+    width: 40%;
+    text-align: center;
+}
+.card-detail__item{
+    order: 0;
+}
+.card-detail__title--blue{
+    margin-top: 5rem;
+   color:dodgerblue;
+   font-size: 3rem;
+}
+
+.card-detail__date{
+    float: right;
+}
+.card-detail__image{
+width: 30%;
+}
+
+.card-detail__text{
+color: DodgerBlue;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card-detail{
+    align-content: center;
+        background-color: rgb(241, 241, 241);
+        width: 140%;
+    }
+    
+    .card-detail__item{
+        order: 0;
+    }
+    .card-detail__title--blue{
+        
+       color: dodgerblue;
+       font-size: 3rem;
+    }
+    
+    .card-detail__date{
+        float: right;
+    }
+    img.card-detail__image{
+       width: 10rem;
+    }
+    
+    .card-detail__text{
+    color: DodgerBlue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+
+  
 }

@@ -4,17 +4,25 @@
  
 }
 .app__container{
- background-color: rgb(43, 226, 226);
+ background-color: rgb(91, 115, 136);
  display: flex;
+ justify-content: center
+  
 }
 .app__item{
   order: 0; 
 }
 
+
+.app__container--column{
+  display: flex;
+  justify-content: center 
+ }
 @media only screen and (max-width: 768px) {
   .app__container{
-  
-
-  }
+    background-color: rgb(91, 115, 136);display: flex;
+    justify-content: center
+     
+   }
 }
 
