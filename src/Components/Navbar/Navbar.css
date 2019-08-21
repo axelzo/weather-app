@@ -24,7 +24,6 @@
   cursor: pointer;
 }
 
-
 .navbar__item{
   padding: 1.4rem;
   text-align: center;
@@ -41,7 +40,6 @@
   margin-right: 3rem;
 }
 
-
 .navbar__items--right {
   align-content: flex-end;
   align-items:center ;
@@ -56,7 +54,6 @@
   cursor: pointer;
 }
 
-
 .btn-menu {
 
     background-color: DodgerBlue;
@@ -68,19 +65,24 @@
     width: 5rem;
    
     
-  }
+}
 
 img.profile  {
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+}
+
+.profile:hover  {
+ cursor: pointer;
+ box-shadow: gray
 }
 
 @media only screen and (max-width: 600px) {
-    .navbar__items,
-    .navbar {
-      flex-direction: row;
-    }
+  .navbar__items,
+  .navbar {
+    flex-direction: row;
+  }
   
   .navbar__items {
       display: flex;
@@ -90,16 +92,13 @@ img.profile  {
     display: none;
   }
  
-
-   img.icon  {
+  img.icon  {
     display: none;
   }
   img.menu  {
     height: 3.6rem;
     width: 3.6rem;
-  }
-
-  
+  } 
 }
 
 

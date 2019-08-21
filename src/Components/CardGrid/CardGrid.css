@@ -2,13 +2,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    width: 95%
 }
 .cards-container__items{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 20rem;
+  align-items: center;
+ 
 }
 
 .card-grid{
@@ -18,7 +19,7 @@
     justify-content: flex-start;
     width: 100%;
     padding: 0rem 5rem 5rem 5rem;
-    background-color: rgb(91, 115, 136);
+    background-color:rgb(211, 215, 224);
     flex-grow: 1;
     
 }
@@ -45,8 +46,8 @@
   }
 
   .select{
-    width: 3rem;
     margin-left: auto;
+    margin-right: 11rem;
   }
 
   .btn--info {
@@ -54,29 +55,29 @@
     margin-top: 3rem;
     margin-right: 3rem;
     margin-bottom: 3rem;
-    background-color: #rgb(16, 30, 60);
     align-self: flex-end;
   }
 .btn--info:hover {
   background: #0b7dda;
   
 }
-@media only screen and (max-width: 600px) {
 
-
-.card-grid{
-  
-    justify-content: center;
-    width: 100%;
-    
+h1{
+  margin-bottom: auto;
 }
+@media only screen and (max-width: 600px) {
+  .card-grid{
+    justify-content: center;
+    width: 100%;  
+  }
   
   .btn--info {
-    display: none;
+    display: flex;
   
   }
 
   .select{
+   margin-right: 6rem;
     width: 3rem;
   }
 }

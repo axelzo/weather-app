@@ -12,31 +12,26 @@ function Navbar() {
   return (
 
     <nav className="navbar">
-
       <div className="navbar__items">
-        <button class="btn-menu"><i class="fa fa-bars"></i></button>
-      <div className="navbar__item"></div>
+        <button className="btn-menu"><i className="fa fa-bars"></i></button>
       </div>
-
       <div className="navbar__items navbar__items--center">
-      <div className="navbar__item">
-          <img src={chat} alt="Profile" className="profile" />
-        </div>
-        <div className="navbar__item">
-          <img src={notification} alt="Profile" className="profile" />
-        </div>
-        <div className="navbar__item">
-          <img src={email} alt="Profile" className="profile" />
-        </div>
+         <div className="navbar__item">
+            <img src={chat} alt="Profile" className="profile" />
+          </div>
+          <div className="navbar__item">
+            <img src={notification} alt="Profile" className="profile" />
+          </div>
+          <div className="navbar__item">
+            <img src={email} alt="Profile" className="profile" />
+          </div>
       </div>
-
       <div className="navbar__items navbar__items--right">
-        <h3 className="navbar__item" >Hi, Axel </h3><i className="fa   fa-sort-down"></i>
+        <h3 className="navbar__item" >Hi, Axel </h3><i className="profile fa   fa-sort-down"></i>
         <div className="navbar__item">
           <img src={profile} alt="Profile" className="profile" />
         </div>
       </div>
-
     </nav>
 
   );

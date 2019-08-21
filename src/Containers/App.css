@@ -1,28 +1,37 @@
 .app {
   display: flex;
   flex-direction: column;
- 
 }
+
 .app__container{
- background-color: rgb(91, 115, 136);
+ background-color: rgb(211, 215, 224);
  display: flex;
  justify-content: center
-  
 }
 .app__item{
   order: 0; 
 }
 
+.app__item--40{
+  order: 0; 
+  width: 50%;
+}
 
 .app__container--column{
   display: flex;
   justify-content: center 
- }
+}
+
 @media only screen and (max-width: 768px) {
   .app__container{
-    background-color: rgb(91, 115, 136);display: flex;
+    background-color: rgb(211, 215, 224);
+    display: flex;
     justify-content: center
-     
    }
+
+   .app__item--40{
+    order: 0; 
+    width: 600%;
+  }
 }
 
