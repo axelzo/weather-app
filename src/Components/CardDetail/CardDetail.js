@@ -8,10 +8,9 @@ function CardDetail({ current, location, forecast, cardSelected}) {
         <div className="card-detail">
           <h1 className="card-detail__item card-detail__title--blue">{forecast.forecastday[cardSelected].day.condition.text}</h1>
           <br />
-          <p className="card-detail__item card-detail__date">{current.date}</p>
-          <img src={forecast.forecastday["0"].day.condition.icon} alt="Avatar" className=" card-detail__item card-detail__image" />
+          <img src={forecast.forecastday[cardSelected].day.condition.icon} alt="Avatar" className=" card-detail__item card-detail__image" />
           <div className="card-detail__item card-detail__container">
-            <h2><b>{`${current.last_updated}`}</b></h2>
+            <h2><b>{`${forecast.forecastday[cardSelected].date}`}</b></h2>
             <h2><b>{`${location.name}, ${location.region}, ${location.country}`}</b></h2>
             <br />
             <br />
